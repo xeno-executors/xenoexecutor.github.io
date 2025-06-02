@@ -1,0 +1,98 @@
+#sticky-ad-lightweight-container-top,
+#sticky-ad-lightweight-container-bottom {
+    width: 100%;
+    padding: 5px;
+    transition: all 0.1s ease-in;
+    z-index: 99999;
+}
+
+.sticky-ad-bottom {
+    position: fixed;
+    bottom: 2px;
+    background-color: #fefefe;
+    box-shadow: 0 -6px 18px 0 rgba(9, 32, 76, 0.1);
+    height: 100px;
+    overflow: hidden;
+}
+
+.sticky-ad-top {
+    position: fixed;
+    top: -10px;
+    background-color: #fff;
+    height: 100px;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.admin-bar .sticky-ad-top {
+    top: 32px;
+}
+
+/* Wrapper & Content */
+.sticky-ad-wrap {
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.sticky-ad-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.sticky-ad-close {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    position: absolute;
+    right: 5px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.sticky-ad-bottom .sticky-ad-close {
+    top: 5px;
+}
+
+.sticky-ad-top .sticky-ad-close {
+    bottom: 0px; right: 0px;
+}
+
+.sticky-ad-close img,
+.sticky-ad-close svg,
+a.sticky-ad-close-btn,
+a.sticky-ad-close-btn svg {
+    width: 30px !important;
+    height: 30px !important;
+    display: block;
+    z-index: 999999 !important;
+}
+
+.sticky-ad-close-text {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Optional: Force images inside the ad content to scale properly if needed
+.sticky-ad-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+*/
